@@ -1,0 +1,12 @@
+var i;
+{
+	i := 1;
+first:  i := random();
+goto second;
+	i := 2;
+third:	i := 3;
+second: i := random(23);
+goto forth;
+goto first;
+forth:  i := 100;
+}.
